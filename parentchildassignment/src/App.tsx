@@ -1,16 +1,21 @@
-import React from 'react';
-import SeederPage from './page/SeederPage';
-import Box from '@mui/material/Box';
+import React from "react";
+import styled from "styled-components";
+import Sidebar from "./components/organisms/Sidebar/Sidebar";
 
-
-const App: React.FC =() => {
+export const Box = styled.div`
+  border: 1px solid black;
+  width: 300px;
+  height: 560px;
+  margin-left: 20px;
+  margin-top: 5px;
+  background-color: black;
+`;
+const App: React.FC = () => {
   return (
-    <Box sx={{border:'5px solid black', height:600, width:250, ml:20, backgroundColor:'#222124',mt:5}}>
-    <div>
-      <SeederPage />
-    </div>
+    <Box>
+      <Sidebar />
     </Box>
-  )
-}
+  );
+};
 
 export default App;
